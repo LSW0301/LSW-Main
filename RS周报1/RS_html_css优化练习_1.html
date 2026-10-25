@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS_html_css练习_1</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* 盒子组 */
+    body {
+      background-image: linear-gradient(rgba(26, 16, 40, 0.85), rgba(26, 16, 40, 0.85)), url('./image/11周年背景1.png');
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+    }
+
+    .box {
+      width: 700px;
+      background-color: #3e2145;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .content {
+      width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #4b2a54;
+      border-radius: 15px;
+    }
+
+    /* 图片组 */
+    .img_11 {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .img_10 {
+      max-width: 250px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .周报 {
+      max-width: 700px;
+    }
+
+
+    /* 标题组 */
+    .title_1 {
+      font-size: 50px;
+      color: #f1c40f;
+      text-align: center;
+    }
+
+    .title_2 {
+      font-size: 50px;
+      color: #f1c40f;
+      text-align: center;
+    }
+
+    .title_目录 {
+      font-size: 30px;
+      color: #f1c40f;
+      margin: 20px 0;
+      text-indent: 1.2em;
+      font-size: 40px;
+    }
+
+    .title_3 {
+      font-size: 30px;
+      color: #f1c40f;
+      margin: 20px 0;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    /* 段落组 */
+    .content p {
+      font-size: 20px;
+      color: #f5f0f9;
+      text-indent: 2em;
+      text-align: justify;
+      margin: 20px 0;
+      line-height: 1.5;
+    }
+
+    .目录 {
+      list-style-type: none;
+    }
+
+    .目录1 {
+      color: #f1c40f;
+      margin-left: 2.5em;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .目录2 {
+      color: #f1c40f;
+      margin-left: 2.5em;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .目录3 {
+      color: #f1c40f;
+      margin-left: 2.5em;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .关注我 {
+      color: #f1c40f;
+      margin-left: 1.8em;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    /* 表单区块整体 */
+    .feedback-form {
+      background-color: #3e2145;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+
+    .form-item {
+      margin-bottom: 15px;
+    }
+
+
+    .form-item label {
+      color: #f1c40f;
+
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+
+    .feedback-form input[type="text"],
+    .feedback-form select,
+    .feedback-form textarea {
+      background-color: #2c1833;
+
+      color: #f5f0f9;
+
+      border: 1px solid #4b2a54;
+
+      border-radius: 4px;
+      padding: 8px;
+      outline: none;
+
+    }
+
+
+    .feedback-form textarea {
+      width: 100%;
+      height: 80px;
+      resize: vertical;
+
+      box-sizing: border-box;
+
+      margin-top: 5px;
+    }
+
+
+    .submit-btn {
+      background-color: #e9ff69;
+
+      color: #1a1028;
+
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      font-weight: bold;
+      transition: 0.3s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- 大盒子 -->
+  <div class="box">
+    <!-- 目录 -->
+    <img src="./image/RS周报.png" alt="" title="RS周报" class="周报">
+    <h1 class="title_目录">目录</h1>
+    <ul class="目录">
+      <li><a href="#11周年" class="目录1">欢庆11周年</a></li>
+      <li><a href="#往期回顾" class="目录2">往期回顾</a></li>
+      <li><a href="#关注我" class="目录3">关注我</a></li>
+
+
+    </ul>
+
+
+    <!-- 第一段内容 -->
+    <div class="content">
+      <h2 class="title_1" id="11周年">欢庆11周年</h2>
+      <img src="./image/11周年.jpg" alt="" class="img_11" title="11周年">
+      <p>
+        退游整整一年，本以为自己早已是“手残党”，对于多指操作和读谱节奏已全然生疏。但不得不承认，当年在指尖沉淀下来的肌肉记忆，并没有随着时间消散。重新握起设备的瞬间，那种熟悉的感觉立刻回归。紫金交错的传送门、行云流水的路线设计，这波11周年的诚意拉满，打起来确实让人心跳加速(真)。
+      </p>
+      <!-- 第二段内容 -->
+      <h2 class="title_2" id="往期回顾">往期回顾</h2>
+      <p> 回顾退游前的那些日子，可以说是被《滚动的天空》狠狠折磨的峥嵘岁月。从最开始的举步维艰，到后来勉强能跟上《时忆》的节奏，每一步都伴随着无数次“手残”的失误和差点摔手机的冲动</p>
+      <img src="./image/十周年.PNG" alt="" class="img_10" title="10周年">
+      <!-- 第三段内容 -->
+      <h2 class="title_2" id="关注我">关注我</h2>
+      <p>来来来这是什么主页来看一下</p>
+      <a href="https://space.bilibili.com/2015409436?spm_id_from=333.1007.0.0" class="关注我" target="_blank">点我!!!</a>
+      <!-- 留言板 -->
+      <h2 class="title_3">读者留言板</h2>
+      <form action="" autocomplete="off" class="feedback-form">
+        <div class="form-item">
+          <label for="username">您的称呼：</label>
+          <input type="text" id="username" placeholder="请输入昵称" required>
+        </div>
+
+        <div class="form-item">
+          <label>周年偏好关卡：</label>
+          <input type="radio" name="level" id="lv1" checked><label for="lv1">行歌未竟</label>
+          <input type="radio" name="level" id="lv2"><label for="lv2">时忆</label>
+          <input type="radio" name="level" id="lv3"><label for="lv3">涅槃</label>
+          <input type="radio" name="level" id="lv4"><label for="lv4">电爱</label>
+          <input type="radio" name="level" id="lv5"><label for="lv5">七年之梦</label>
+          <input type="radio" name="level" id="lv6"><label for="lv6">其他</label>
+        </div>
+
+        <div class="form-item">
+          <label for="mood">当前评价：</label>
+          <select id="mood">
+            <option value="fast">稳如老狗</option>
+            <option value="normal">勉强能打</option>
+            <option value="slow">手残党</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="msg">想说的话：</label>
+          <textarea id="msg" placeholder="写下你对RS的复建宣言..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">提交留言</button>
+      </form>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
